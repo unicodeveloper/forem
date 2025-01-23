@@ -8,6 +8,5 @@ RUN ln -s /opt/apps/forem/public/uploads/ /opt/apps/forem/public/localimages/upl
 
 ADD ./scripts scripts/
 
-RUN chmod +x scripts/rails.sh
 ENTRYPOINT ["scripts/rails.sh" ]
 
