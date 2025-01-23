@@ -7,3 +7,7 @@ RUN mkdir /opt/apps/forem/public/localimages
 RUN ln -s /opt/apps/forem/public/uploads/ /opt/apps/forem/public/localimages/uploads
 
 ADD ./scripts scripts/
+
+RUN chmod +x scripts/rails.sh
+ENTRYPOINT ["scripts/rails.sh" ]
+
