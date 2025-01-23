@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
 
-source scripts/services.env
-
 echo "Running app_initializer:setup"
 until bin/rails app_initializer:setup
 do
